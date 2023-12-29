@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url('img/page1.jpg') center/cover no-repeat;
+    background-color: #faf0d7;
+    color: #faf0d7;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-attachment: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-position: top; /* Mengubah background position menjadi top untuk tampilan desktop */
+        background-size: auto 100%; /* Menggunakan auto untuk width agar gambar terlihat keseluruhan di desktop */
+    }
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: -30px; /* Sesuaikan dengan jarak dari bawah */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button {
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    background-color: #102C57;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-lihat-produk {
+    background-color: transparent;
+    border: 2px solid #102C57;
+    padding: 10px 5px;
+    font-weight: bold;
+    color: #102C57;
+}
+.button-sk-berlaku {
+    background-color: transparent;
+    border: 2px solid #102C57;
+    padding: 10px 5px;
+    font-weight: bold;
+    color: #102C57;
+}
+    </style>
+    <title>Promo Fazzio Ceria</title>
+</head>
+<body>
+    <div class="buttons-container">
+        <a href="https://yamaha-motor.co.id/product/fazzio/" class="button button-lihat-produk">LIHAT PRODUK</a>
+        <a href="form.html" class="button button-isi-formulir">ISI FORMULIR</a>
+        <a href="syarat-ketentuan.html" class="button button-sk-berlaku">S&K BERLAKU</a>
+    </div>
+
+</body>
+</html>
